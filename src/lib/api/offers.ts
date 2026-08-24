@@ -54,7 +54,7 @@ export const offersApi = {
   },
 
   getDownloadUrl: (id: string): string => {
-    const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api/v1";
+    const baseUrl = process.env.NEXT_PUBLIC_API_URL || "https://study-platform-website-backend.vercel.app/api/v1";
     return `${baseUrl}/offers/${id}/download`;
   },
 };
